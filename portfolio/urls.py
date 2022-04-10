@@ -5,5 +5,6 @@ from portfolio.views import *
 urlpatterns = [
     path('', home_page, name="home"),
     path('about/', about_page, name="about"),
-    path('portfolio/', portfolio_page, name="portfolio")
+    path('portfolio/', portfolio_page, name="portfolio"),
+    path('contact/', contact_page, name="contact")
 ]

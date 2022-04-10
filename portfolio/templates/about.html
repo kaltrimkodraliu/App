@@ -1,1 +1,19 @@
-About
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="details">
+        <h1>About me</h1>
+        <h2>I am Kaltrim Kodraliu</h2>
+        <br>
+        <p>Highly motivated individual seeking an entry position on Web 
+            Development, focused more on frontend part. Working as 
+            freelancer on some small projects.</p>
+    </div>
+    <div class="images">
+        <img src="{% static 'images/about.jpeg' %}" class="photo">
+    </div>
+</div>
+{% endblock %}

@@ -1,1 +1,20 @@
-Portfolio
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Portfolio{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="details">
+        <h1>Worked on this project</h1>
+        <a href="https://bestcryptolibs.com">bestcryptolibs.com</a>
+        <p>A collection of best libraries and components from github 
+            for crypto. 
+            Made with Django framework with bootstrap on
+            templates
+        </p>
+    </div>
+    <div class="images">
+        <img src="{% static 'images/bestcryptolibs.png' %}" class="photo">
+    </div>
+</div>
+{% endblock %}

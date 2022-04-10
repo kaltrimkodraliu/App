@@ -1,1 +1,18 @@
-Home
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="details">
+        <h1> I AM <span>KALTRIM</span></h1>
+        <p>This is my portfolio website to show details</p>
+        <p>about my work and experience on web development</p>
+        <p>You can view my CV for more informations</p>
+        <a href="https://drive.google.com/file/d/1QS5EwmBMWrwLuAiS0BPSn7TJoDmK9i3I/view?usp=sharing">View CV</a>
+    </div>
+    <div class="images">
+        <img src="{% static 'images/profile.jpg' %}" class="photo">
+    </div>
+</div>
+{% endblock %}

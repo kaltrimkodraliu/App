@@ -11,3 +11,7 @@ def about_page(request):
 
 def portfolio_page(request):
     return render(request, 'portfolio.html')
+
+
+def contact_page(request):
+    return render(request, 'contact.html')
