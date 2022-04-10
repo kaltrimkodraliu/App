@@ -5,6 +5,9 @@
 ### Creating environment
 python -m venv .venv
 
+### Activating environment
+source .venv/Scripts/Activate
+
 ### Installing requirements
 pip install -r requirements.txt
 
